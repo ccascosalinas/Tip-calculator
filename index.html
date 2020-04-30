@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <title>Lista de Tareas</title>
+  </head>
+  <body>
+    <div class="base">
+      <div class="superior">
+        <h1>TIP CALCULATOR</h1>
+      </div>
+
+      <h3>¿How much was your bill?</h3>
+      <br />
+      <br />
+      <p>
+        $
+        <input type="number" placeholder="Bill Amount" id="BillAmountBox"  name="valor1"  required/>
+      </p>
+
+      <br />
+	  <h3>¿How was the service?</h3>
+	  
+	  <select name="tip-selector" id="QualityOfService">
+		  <option value="" disabled selected>--Choose an option--</option>
+		  <option value="0.35">Excelent --- 35%</option>
+		  <option value="0.30">Very good ---30%</option>
+		  <option value="0.20">Good ---20%</option>
+		  <option value="0.15">Bad ---15%</option>
+	  </select>
+
+	  <h3>¿How many people are sharing the bill?</h3>
+
+	  <p>
+        
+        <input type="text" placeholder="Number of people" id="PeopleBox" required /> People
+	  </p>
+	  
+	  <br>
+    <button id="press">Calculate!</button>
+    
+    <div id="ShowTip"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
